@@ -1,4 +1,5 @@
 Usage:
+    super-mdfind QUERY
     super-mdfind ( -h | --help )
 
 Options:
@@ -7,3 +8,4 @@ Options:
 Commands:
 
 Arguments:
+    QUERY                   textual query
