@@ -24,7 +24,7 @@ generateProject(_ => {
         _.cmd("./node_modules/.bin/git-hist history.md")
         _.cmd("./node_modules/.bin/mustache package.json docs/readme.md | ./node_modules/.bin/stupid-replace '~USAGE~' -f docs/usage.md > readme.md")
         _.cmd("mkdir -p ./man")
-        _.cmd("pandoc -s -f markdown -t man readme.md > ${LMANPATH}/super-mdfind.1")
+        _.cmd("pandoc -s -f markdown -t man readme.md > ${LMANPATH}/man1/super-mdfind.1")
         _.cmd("hub cm 'update docs and history.md'")
     })
 
